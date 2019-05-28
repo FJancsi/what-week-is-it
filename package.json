@@ -1,0 +1,40 @@
+{
+  "name": "what-week-is-it",
+  "version": "1.0.0",
+  "description": "Get current week of the year",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest src",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FJancsi/what-week-is-it.git"
+  },
+  "keywords": [
+    "week",
+    "year"
+  ],
+  "author": "Janos Fekete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FJancsi/what-week-is-it/issues"
+  },
+  "homepage": "https://github.com/FJancsi/what-week-is-it#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^24.8.0",
+    "np": "^5.0.2",
+    "watch": "^1.0.2"
+  }
+}
