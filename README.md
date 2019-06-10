@@ -18,6 +18,6 @@ const { whatWeekIsIt } = require('what-week-is-it');
 import { whatWeekIsIt } from 'what-week-is-it';
 
 console.log(whatWeekIsIt());
-// 22
+// 24
 ```
 
