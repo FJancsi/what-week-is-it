@@ -1,7 +1,15 @@
-sudo: false 
+sudo: false
 language: node_js
 node_js:
- - "node"
+- node
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: npm
+  email: fekete.janos2@gmail.com
+  api_key:
+    secure: NfSr4fNsBmPMq6z9kmx6c9FYeGK7Q8gwdKYt/l9jZoh7kg46JqxOiIK57SOS8tItkCcZiMJQ25emHrO82yoQCUlhVCCQMaJbYlvtUxqtImbBiQ4cPYoAlzDOwZYLmjA22sERAETZLxBBVuOEPxK9SaXuDyVu4AMvS9LbeuzJEVbVmrxKttelmB7l4rCdIDk0YqJCcMfLwpODoAveLJhJtWbDynDXFsdiOZEDlCjDaNLw3QRJyNZeHLvmfHq0S7ynbQvMZtrVmjVU0sErYJaLsE6ccpFN9aYMrU22TjBdaWif2+YQwYm6lyXXmIoF2j0oGfTKBZ3tXRdAXJeXkISqDRIkOwRNSj5epFlSocXglza2NlXGBPY/esvaQP/af1pxp9mveRjt6cg0Un4LVHp9wdJxVgRbQQWln6nSq+9IsqHP67XOO+pPUdckftCXroudD838TcLGQKLMR0Y1GgT6YSS2O0NcoCGyfJThz2V7gI2UY04ika2nz2dhSrVgn8mlpI4kIa1xmVAPOhQk1D8Ec31o+gR1lpFT0PLiP9uQEMVLQ+EzC7hwwVefQCm+uqLTREKd/+j3Sw77/JnxtRDQEMAzg5nMtQ847hXVwram/0VLm9+5VJlOJBeyL+5+Xq+T0WND6OWKsiFVBpzS4IFBhiS95jiqsKfjNNxxvpnK6PY=
+  on:
+    tags: true
+    repo: FJancsi/what-week-is-it
