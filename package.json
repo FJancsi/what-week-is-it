@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
-    "test": "jest src && codecov",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "npm run pretest && jest src && codecov",
     "test:watch": "npm test -- --watch",
     "prepublish": "npm run build",
     "release": "np"
@@ -41,6 +42,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
     "codecov": "^3.5.0",
+    "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "np": "^5.0.3",
     "watch": "^1.0.2"
