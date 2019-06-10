@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
-    "test": "jest src",
+    "test": "jest src && codecov",
     "test:watch": "npm test -- --watch",
     "prepublish": "npm run build",
     "release": "np"
@@ -15,6 +15,10 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
@@ -36,6 +40,7 @@
     "@babel/preset-env": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
+    "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "np": "^5.0.3",
     "watch": "^1.0.2"
