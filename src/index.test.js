@@ -2,5 +2,5 @@
 import { whatWeekIsIt } from 'what-week-is-it';
 
 test('what week is it', () => {
-    expect(whatWeekIsIt()).toBe(29); //should be up-to-date :)
+    expect(whatWeekIsIt()).toBe(35); //should be up-to-date :)
 });
