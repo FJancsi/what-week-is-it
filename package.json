@@ -10,7 +10,7 @@
     "lock-lint": "lockfile-lint -t npm -p package-lock.json -a npm -s",
     "test": "npm run pretest && npm run lock-lint && jest src && codecov",
     "test:watch": "npm test -- --watch",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm run test",
     "release": "np"
   },
   "babel": {
