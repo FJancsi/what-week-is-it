@@ -1,6 +1,6 @@
 {
   "name": "what-week-is-it",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "Get current week of the year",
   "main": "build/index.js",
   "scripts": {
