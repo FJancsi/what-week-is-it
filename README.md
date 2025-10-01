@@ -1,6 +1,5 @@
 
 # What week is it?
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/FJancsi/what-week-is-it/coverage.svg?style=flat-square)](https://codecov.io/gh/FJancsi/what-week-is-it/)
 [![Known Vulnerabilities](https://snyk.io//test/github/FJancsi/what-week-is-it/badge.svg?targetFile=package.json)](https://snyk.io//test/github/FJancsi/what-week-is-it?targetFile=package.json)
 [![Downloads](https://img.shields.io/npm/dm/what-week-is-it.svg)](https://npmcharts.com/compare/what-week-is-it?minimal=true)
 [![npm](https://img.shields.io/npm/v/what-week-is-it.svg)](https://www.npmjs.com/package/what-week-is-it)
